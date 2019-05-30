@@ -1,0 +1,86 @@
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(166, 166, 166);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 100;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(41, 41, 41);
+    border-radius: 16px;
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: rgb(149, 191, 71);
+    opacity: 100;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: rgb(52, 81, 17);
+    left: 20px;
+}
+
+.fixed-container {
+    -ms-flex: 0 0 230px;
+    flex: 0 0 230px; 
+} 
+
+@media (max-width: 690px) {
+  .fixed-container {
+    display: none; 
+  } 
+}
+
+hr {
+height: 1;
+background: rgb(100, 100, 100);
+}
+
+.list-group-item {
+    border: 0;
+}
+
+.alert{
+    border: 0;
+    background-color: rgb(170, 170, 170);
+    font-size: 14px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: rgb(0, 0, 0) !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: rgb(0, 0, 0) !important;
+}
+
+ul.nav li.active a {
+    color: rgb(0, 0, 0) !important;
+}
